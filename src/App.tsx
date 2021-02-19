@@ -1,24 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Accordion from './components/Accordion/Accordion';
-import OnOff from './components/OnOff/OnOff';
-import {Rating} from './components/Rating/Rating';
-import UncontrolledAccordion from './components/UncontrolledAccordion/UncontrolledAccordion';
-import { UncontrolledRating } from './components/UncontrolledRating/UncontrolledRating';
+import {Rating, RatingValueType} from './components/Rating/Rating';
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 function App() {
+    let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
+
     return (
         <div className={"App"}>
-            <OnOff />
-
-            <UncontrolledAccordion titleValue={"Menu"}/>
-           {/* <UncontrolledAccordion titleValue={"Users"}/>*/}
-          {/*  <Accordion titleValue={"Menu"} collapsed={false}/>
+            <Rating value={ratingValue} onClick={setRatingValue}/>
+            {/* <UncontrolledAccordion titleValue={"Users"}/>*/}
+            {/*  <Accordion titleValue={"Menu"} collapsed={false}/>
             <Accordion titleValue={"Users"} collapsed={true}/>*/}
-            <UncontrolledRating />
+              <UncontrolledRating />
         </div>
     );
 }
+// time 32.33
 
 type PageTitlePropsType = {
     title: string

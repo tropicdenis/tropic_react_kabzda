@@ -5,7 +5,7 @@ type OnOffPropsType = {
     onFlag: boolean
 }
 
-function OnOff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
 
 
 
@@ -44,6 +44,3 @@ function OnOff(props: OnOffPropsType) {
         </div>
     );
 }
-
-
-export default OnOff;

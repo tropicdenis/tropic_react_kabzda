@@ -11,7 +11,7 @@ type AccordionPropsType = {
     collapsed: collapsedType
 }
 
-function Accordion(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
 
     return (
         <div>
@@ -31,7 +31,7 @@ export type AccordionTitlePropsType = {
 
 function AccordionTitle(props: AccordionTitlePropsType) {
     return (
-        <h3 onClick={() => {debugger
+        <h3 onClick={() => {
             props.onClick(!props.collapsed)}
        }>---{props.title}---</h3>
     )
@@ -46,5 +46,3 @@ function AccordionBody() {
         </ul>
     )
 }
-
-export default Accordion

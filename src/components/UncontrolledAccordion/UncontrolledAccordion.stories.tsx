@@ -5,9 +5,7 @@ import {UncontrolledAccordion} from "./UncontrolledAccordion";
 export default {
     title: 'UncontrolledAccordion stories  ',
     component: UncontrolledAccordion
-} ;
+};
 
-const callback = action("accordion mode change fired")
-
-export const MenuModeChanging= ()=> <UncontrolledAccordion  titleValue={"Menu"}/>;
+export const MenuModeChanging = () => <UncontrolledAccordion titleValue={"Menu"}/>;
 

@@ -5,9 +5,10 @@ import {UncontrolledOnOff} from "./UncontrolledOnOff";
 export default {
     title: 'UncontrolledOnOff stories  ',
     component: UncontrolledOnOff
-} ;
+};
 
 const callback = action("OnOff mode change fired")
 
-export const OnOffModeChanging= ()=> <UncontrolledOnOff  onChange={callback}/>;
+export const OnModeChanging = () => <UncontrolledOnOff defaultOn={true} onChange={callback}/>;
+export const OffModeChanging = () => <UncontrolledOnOff defaultOn={false} onChange={callback}/>;
 

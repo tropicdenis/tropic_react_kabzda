@@ -1,8 +1,6 @@
 import React from "react";
 
-/*export type collapsedType = {
-    collapsed: boolean
-}*/
+
 
 export type collapsedType = boolean;
 export type AccordionPropsType = {

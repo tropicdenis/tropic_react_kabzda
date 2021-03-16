@@ -17,10 +17,11 @@ function App() {
              <UncontrolledAccordion titleValue={"Users"}/>
             <Accordion titleValue={"Menu"}
                        onChange={setAccordionCollapsed}
-                       collapsed={accordionCollapsed}/>
-                     {/*  <OnOff onClick={setOn} onFlag={on}/>*/}
-            {/* <Accordion titleValue={"Users"} collapsed={true}/>*/}
-           {/* <UncontrolledRating/>*/}
+                       collapsed={accordionCollapsed}
+
+
+            />
+
            <UncontrolledOnOff onChange={setOn} /> {on.toString()}
         </div>
     );

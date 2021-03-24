@@ -14,5 +14,6 @@ export const OffMode= ()=> <OnOff onFlag={false} onClick={callback}/>;
 
 export const ModeChanging = ()=> {
     const [value, setValue] = useState<boolean>(true)
+
     return <OnOff onFlag={value} onClick={setValue}/>;
 }

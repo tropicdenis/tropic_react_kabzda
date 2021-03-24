@@ -5,10 +5,7 @@ type OnOffPropsType = {
     onFlag: boolean
 }
 
-export function OnOff(props: OnOffPropsType) {
-
-
-
+function OnOffM(props: OnOffPropsType) {
     const onStyle = {
         width: "30px",
         height: "20px",
@@ -44,3 +41,5 @@ export function OnOff(props: OnOffPropsType) {
         </div>
     );
 }
+
+export const OnOff = React.memo(OnOffM)

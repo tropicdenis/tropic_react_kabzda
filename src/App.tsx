@@ -7,7 +7,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 
-function App() {
+function AppM() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
     let [accordionCollapsed, setAccordionCollapsed] = useState<collapsedType>(false);
     let [on, setOn] = useState<boolean>(false)
@@ -27,7 +27,7 @@ function App() {
     );
 }
 
-// time 32.33
+const App = AppM
 
 type PageTitlePropsType = {
     title: string
